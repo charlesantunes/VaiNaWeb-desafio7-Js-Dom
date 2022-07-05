@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    cursor: url(img/normal.cur), default;
+}
+main{
+
+    display: flex;
+}
+
+.sec-right{
+    width: 75%;
+    height: 99.2vh;
+
+}
+.tela1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/lol.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+        
+}
+.tela2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/darkbinding.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sec-left{
+    border: solid 2px black;
+    width: 25%;
+    height: 42vw;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 70%;
+}
+.form{
+    border: solid 2px blue;
+    width: 100%;
+    height: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.div-top, .div-bot{
+    background-color: #E8E6E6;
+    width: 70%;
+    height: 4vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    cursor: url(img/vertical.cur),default;
+}
+.redeSociais{
+    width: 70%;
+    margin: 4vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+.retangulo {
+    width: 25%;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.retangulo img {
+    width: 25%;
+    height: 60%;
+ }
+ .ck{
+    width: 80%;
+    height: 5vh;
+    display: flex;
+}
+.ck input{
+    width: 20%;
+    height: 3vh;
+    cursor: url(img/handwriting.cur), default;
+}
+.textLabel{
+    cursor: url(img/handwriting.cur), default;
+}
+
+.btn{
+    margin: 10vh 0px 2vh 0px;
+    width: 50px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    /* background-image: url(img/seta-direita.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position-x: center; */
+}
+.btnColor2{
+    background-color: #FF002E;
+    opacity: 21%;
+}
+.btnColor1{
+    background-color: #FF002E;
+}
+.btn img{
+    margin-top: 3px;
+    width: 60%;
+    transition: 1s all linear;
+}
+button:hover,.retangulo:hover {
+    transform: scale(1.2);
+    cursor: url(img/handwriting.cur), default;
+}
+
+a:hover{
+    color: black;
+    font-weight: bolder;
+    cursor: url(img/link.cur),default;
+}
+fieldset{
+    width: 200px;
+    height: 80px;
+    margin-top: 1vh;
+}

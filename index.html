@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio 7 - Dom</title>
+    <style>
+        .div-backgroud{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .textLabel{
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .text{
+            font-size: 10px;
+            color: #716E6E;
+        }
+        .div-top label, .div-bot label{
+            width: 90%;
+            cursor: url(img/vertical.cur),default;
+        }
+        input{
+            cursor: url(img/vertical.cur),default;
+            background-color: #E8E6E6;
+            padding-bottom: 2vh;
+            width: 90%;
+            border: none;
+            font-size: 1.5rem;
+            outline: 0;
+        }
+        .corAzul{background-color: #2051FF;}
+        .corvermelho{background-color: #8A0000;}
+        .corPreto{background-color: #000000;}
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <section class="sec-left">
+            <figure class="logo">
+                <img src="img/riot.png" alt="">
+            </figure>
+
+            <form class="form " action="">
+                <label class="textLabel">Fazer Login</label>
+
+                <div class="div-top text div-backgroud">
+                    <label for="nomeUsuario">Nome de Usuário</label>
+                    <input id="nomeUsuario" type="text">
+                </div>
+
+                <div class="div-bot text div-backgroud">
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password">
+                </div>
+
+                <figure class="redeSociais">
+                    <a href="https://www.facebook.com/charlinhoantunes" class="corAzul retangulo"><img src="img/logo-facebook.png" alt="imagem do logo facebook"></a>
+                    <a href="https://www.linkedin.com/in/charlesantunes2022/" class="corvermelho retangulo"><img src="img/logo-google.png" alt="imagem do logo linkedin"></a>
+                    <a href="https://github.com/charlesantunes" class="corPreto retangulo"><img src="img/logo-apple.png" alt="imagem do logo github"></a>
+                </figure>
+                <div class="ck">
+                    <input id="checkbox" type="checkbox">
+                    <label for="checkbox" class="textLabel">Manter login</label>                    
+                </div>
+                <button disabled class="btn btnColor2" onclick="autenticar()" ><img src="img/seta-direita.png" alt=""></button>
+                <a href="#" class="text">Não consegue iniciar a sessão</a>
+                <a href="#" class="text">Criar conta</a>
+                
+            </form>
+        </section>
+        <section class="sec-right">
+            <figure class="tela tela1"></figure>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
