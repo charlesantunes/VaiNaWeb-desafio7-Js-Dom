@@ -36,7 +36,6 @@ main{
     background-repeat: no-repeat;
 }
 .sec-left{
-    border: solid 2px black;
     width: 25%;
     height: 42vw;
     display: flex;
