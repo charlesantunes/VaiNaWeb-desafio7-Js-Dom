@@ -10,39 +10,50 @@ body{
     height: 100vh;
     cursor: url(img/normal.cur), default;
 }
-main{
-
+main{   
     display: flex;
 }
-
-.sec-right{
-    width: 75%;
-    height: 99.2vh;
-
+.corAzul {
+    background-color: #2051FF;
 }
+.corvermelho {
+    background-color: #8A0000;
+}
+.corPreto {
+    background-color: #000000;
+}
+
 .tela1 {
+    /* border: solid 2px blue; */
     width: 100%;
     height: 100%;
     background-image: url(img/lol.png);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-        
+    
 }
 .tela2 {
     width: 100%;
     height: 100%;
     background-image: url(img/darkbinding.gif);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.sec-right{
+border: solid 2px blue;
+width: 75%;
+height: 99.2vh;
+object-fit: cover;
+}
 .sec-left{
+    border: solid 2px green;
     width: 25%;
-    height: 42vw;
+    height: 99.2vh;
     display: flex;
     flex-direction: column;
 }
 .logo{
-    margin: 0 auto;
+    margin: 6vh auto 0vh auto;
     display: flex;
     justify-content: center;
 }
@@ -60,12 +71,22 @@ main{
 .div-top, .div-bot{
     background-color: #E8E6E6;
     width: 70%;
-    height: 4vw;
+    height: 5.5vw;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     cursor: url(img/vertical.cur),default;
+}
+input {
+    cursor: url(img/vertical.cur), default;
+    background-color: #E8E6E6;
+    width: 90%;
+    margin-top: 0.5vh;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    outline: 0;
 }
 .redeSociais{
     width: 70%;
@@ -86,7 +107,7 @@ main{
     width: 25%;
     height: 60%;
  }
- .ck{
+.ck{
     width: 80%;
     height: 5vh;
     display: flex;
@@ -97,6 +118,7 @@ main{
     cursor: url(img/handwriting.cur), default;
 }
 .textLabel{
+    margin-top: 0.7vh;
     cursor: url(img/handwriting.cur), default;
 }
 
@@ -106,10 +128,6 @@ main{
     height: 40px;
     border-radius: 8px;
     border: none;
-    /* background-image: url(img/seta-direita.png);
-    background-size: 75%;
-    background-repeat: no-repeat;
-    background-position-x: center; */
 }
 .btnColor2{
     background-color: #FF002E;
@@ -138,3 +156,216 @@ fieldset{
     height: 80px;
     margin-top: 1vh;
 }
+
+
+.div-backgroud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textLabel {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.text {
+    font-size: 10px;
+    color: #716E6E;
+}
+.div-top label,.div-bot label {
+    width: 90%;
+    cursor: url(img/vertical.cur), default;
+}
+
+
+
+
+@media(max-width: 850px){
+    .sec-right {
+        border: solid 2px blue;
+        width: 80%;
+        height: 99.2vh;
+    }        
+  
+    .logo {
+        margin: 6vh auto 0vh auto;
+        display: flex;
+        justify-content: center;
+    }
+    .logo img {
+        width: 70%;
+    }
+
+    .form {
+        border: solid 3px black;
+        width: 100%;
+        height: 58vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6vh;
+    }
+
+    .div-top,.div-bot {
+        /* border: solid 1px red; */
+        background-color: #E8E6E6;
+        width: 90%;
+        height: 7.7vh;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4vh;
+        cursor: url(img/vertical.cur), default;
+    }
+    input{
+        /* border: solid 1px black; */
+        padding-bottom: 0;
+        width: 92%;
+        height: 4.5vh;
+        /* border: none; */
+        font-size: 0.9rem;
+        outline: 0;
+        
+    }
+    .redeSociais {
+        width: 90%;
+        margin: 4vh auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .retangulo {
+        width: 31%;
+        height: 2.5vw;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }    
+    .retangulo img {
+        width: 40%;
+        height: 70%;
+    }
+    .textLabel{
+        font-size: 0.8rem;
+    }
+    .btn {
+        margin: 6vh 0px 3vh 0px;
+        width: 50px;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 750px){
+    .main {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .sec-right {
+        border: solid 2px blue;
+        width: 100%;
+        height: 99.2vh;
+    }
+    .sec-left {
+        border: solid 2px green;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+    }
+        .logo {
+            border: #2051FF solid 2px;
+            width: 30%;
+            height: 30vh;
+            margin: 0;
+        }
+        .logo img {
+            width: 100%;
+        }
+        .form {
+            border: solid 3px black;
+            width: 70%;
+            height: 30vh;           
+            margin: 0vh;
+            position: relative;
+        }
+        .div-top{
+            border: solid 1px red;
+            width: 40%;
+            height: 7.7vh;
+            margin-bottom: 1.4vh;
+            position: absolute;
+            top: 7vh;
+            left: 2vw;
+        }
+        .div-top label{
+            position: absolute;
+            top: 0;   
+        }
+        .div-top input{
+            border: solid 1px black;
+            position: absolute;
+            top: 0.7em;
+            padding-bottom: 0;
+            width: 92%;
+            height: 4.5vh;
+            /* border: none; */
+            font-size: 0.9rem;
+        }
+        .div-bot {
+            border: solid 1px red;
+            width: 40%;
+            height: 7.7vh;
+            margin-bottom: 1.4vh;
+            position: absolute;
+            top: 16
+            
+            vh;
+            left: 2vw;   
+        }
+        .div-bot label {
+            position: absolute;
+            top: 0;
+        }
+        .div-bot input {
+            border: solid 1px black;
+            position: absolute;
+            top: 0.7em;
+            padding-bottom: 0;
+            width: 92%;
+            height: 4.5vh;
+            /* border: none; */
+            font-size: 0.9rem;
+        }
+        
+                .redeSociais {
+                    width: 20%;
+                    height: 29vh;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    position: absolute;
+                    right: 2vw;
+                }
+        
+                .retangulo {
+                    width: 100%;
+                    height: 5vw;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+        
+                .retangulo img {
+                    width: 50%;
+                    height: 80%;
+                }
+        
+        
+    }
